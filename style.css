@@ -8,5 +8,86 @@
         font-family: 'Inter', 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
             'Arial', sans-serif;
     }
-}
 
+    img {
+        @apply border-primary border rounded-lg;
+    }
+
+    .btn {
+        @apply px-4 shadow bg-primary text-dark py-2 flex items-center gap-x-4 rounded
+    }
+
+    .g {
+        fill: #000;
+    }
+
+    .g,
+    .h,
+    .i {
+        stroke-width: 0px;
+    }
+
+    .h {
+        fill: url(#e);
+    }
+
+    .i {
+        fill: #fef9fe;
+    }
+
+    .fil13 {
+        fill: none
+    }
+
+    .fil1 {
+        fill: #314864
+    }
+
+    .fil6 {
+        fill: #424242
+    }
+
+    .fil0 {
+        fill: #8BB4DC
+    }
+
+    .fil5 {
+        fill: #CD4B06
+    }
+
+    .fil4 {
+        fill: #F16F08
+    }
+
+    .fil9 {
+        fill: #F25900
+    }
+
+    .fil12 {
+        fill: #F2770F
+    }
+
+    .fil2 {
+        fill: #F3780F
+    }
+
+    .fil8 {
+        fill: #F47930
+    }
+
+    .fil7 {
+        fill: #F79412
+    }
+
+    .fil3 {
+        fill: #F79612
+    }
+
+    .fil11 {
+        fill: #FFC414
+    }
+
+    .fil10 {
+        fill: #FFFFFE
+    }
+}

@@ -3,7 +3,7 @@ module.exports = {
   content: [
     './pages/**/*.{js,jsx,ts,tsx,md,mdx}',
     './components/**/*.{js,jsx,ts,tsx,md,mdx}',
-    './*.jsx'
+    './*.{jsx,js}'
   ],
   darkMode: 'class',
   theme: {

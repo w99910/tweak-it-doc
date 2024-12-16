@@ -39,7 +39,7 @@ export default {
         }
     },
     feedback: {
-        content: "Question? Send us an email."
+        component: "Question? Send us an email."
     },
     editLink: {
         content: null,

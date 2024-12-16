@@ -1,5 +1,5 @@
 ---
-title: "Overview"
+title: "What is a style?"
 description: Kuma UI - A new era of CSS-in-JS with Hybrid CSS-in-JS, Theming and Universal UI Components
 ---
 
@@ -7,7 +7,24 @@ import { Callout, Tabs, Tab, Steps } from "nextra/components";
 
 # Overview
 
-<Callout type="info">
-  Kuma UI is named after the Japanese word for 'bear', embodying the spirit of
-  the **"熊" (kuma 🐻‍❄️)** - strong, reliable, and efficient.
-</Callout>
+### What is a style?
+
+Style refers to a collection of settings that control the appearance of elements, including
+
+ <div className="flex flex-wrap gap-5 mt-4">
+            <div className="rounded border-custom-gray p-4 border bg-gradient-gray">
+                Background Color
+            </div>
+            <div className="rounded border-custom-gray p-4 border bg-gradient-gray">Width</div>
+            <div className="rounded border-custom-gray p-4 border bg-gradient-gray">Text Color</div>
+            <div className="rounded border-custom-gray p-4 border bg-gradient-gray">Font Size</div>
+            <div className="rounded border-custom-gray p-4 border bg-gradient-gray">Font Family</div>
+            <div className="rounded border-custom-gray p-4 border bg-gradient-gray">Letter Spacing</div>
+            <div className="rounded border-custom-gray p-4 border bg-gradient-gray">Line Height</div>
+        </div>
+
+There are three types of configuration in a style.
+
+- General: General Configuration for all layout. 
+- Header: In order to overwrite style for the Header Elements, this configuration can be used.
+- Paragraph: In order to overwrite style for the paragraph Elements, you can tweak this paragraph configuration. 

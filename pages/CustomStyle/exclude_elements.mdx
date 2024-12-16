@@ -7,7 +7,37 @@ import { Callout, Tabs, Tab, Steps } from "nextra/components";
 
 # Exclude Elements
 
+Sometimes, you might want to exclude some elements from being applied by the extension. Excluding element is a bit tricky. Thus, please use appropriate methods based on your scenarios.
+
+### Add Element
+
+When you cannot select element such as hidden popover, you can use this feature. You can provide style selector name such as [class name](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/class) or [id](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/id) of the elements you want to exclude.
+
+  For example, let me show how I exclude background color of Youtube Profile PopUp from being applied in transparent mode.
+
+  - I inspect the element by right clicking on the modal and click `Inspect`. 
+  - Search for the main element where background color is being applied.
+  - Then get selector name `ytd-multi-page-menu-renderer` of the style.
+
+<br/>
+
+<video className="rounded-lg" muted controls loop playsinline src="/custom-style/youtube-exclude-popup.webm" />
+
+
+### Select Element
+
+This method is easy and straightforward but you need to select the exact element to exclude. If the extension is not excluding the element, you should check if you have selected the correct element by inspecting it ( using the method 1.)
+
+<br/>
+
+
 <Callout type="info">
-  Kuma UI is named after the Japanese word for 'bear', embodying the spirit of
-  the **"熊" (kuma 🐻‍❄️)** - strong, reliable, and efficient.
+  I know that it is a little confusing for no-coders. Thus, please <a href="mailto:support@tweakit.today" className="text-primary">let me know</a> if you need help with this. I would be happy to help you. :)
 </Callout>
+
+
+
+----
+
+
+<video className="rounded-lg" muted controls loop playsinline src="/custom-style/exclude-elements.webm" />

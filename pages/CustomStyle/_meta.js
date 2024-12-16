@@ -1,5 +1,5 @@
 export default {
-    "index": "Overview",
+    "index": "What is a style?",
     "BackgroundColor": "Background Color",
     "Width": "Width",
     "Font_Color": "Font Color",
