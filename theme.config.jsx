@@ -3,6 +3,7 @@ import svg from './public/logo'
 
 export default {
     logo: <div className="flex items-center gap-x-2" dangerouslySetInnerHTML={{ __html: svg }} ></div>,
+    logoLink: 'https://tweakit.today',
     head: (
         <>
             <meta charset="UTF-8" />
@@ -39,7 +40,8 @@ export default {
         }
     },
     feedback: {
-        component: "Question? Send us an email."
+        content: "Question? Send us an email.",
+        useLink: () => "mailto:support@tweakit.today"
     },
     editLink: {
         content: null,
