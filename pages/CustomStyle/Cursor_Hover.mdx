@@ -1,0 +1,45 @@
+---
+title: "Cursor Hover"
+---
+
+import { Callout, Tabs, Tab, Steps } from "nextra/components";
+
+# Cursor Hover
+
+In order to set the cursor style when you hover a button or a link, you can use the `cursor hover` property. If you don't set the cursor, the default cursor will be displayed.
+
+The usage is similar to `Cursor`. Example usage will be as follows:
+
+### Setting Cursor to Predefined Keyword
+
+- Copy the code below and paste the keyword to the `cursor` value.
+
+```CSS
+wait
+```
+
+### Setting Cursor to Image
+
+- Find the image you want to set as cursor. ( I recommend you to find icon image. )
+- Right click on the image and select `Copy Image Address`.
+- Copy the code below and paste the image address to the `image_address` value inside `url`.
+
+```CSS
+url("image_address") 16 16, auto;
+```
+
+Example
+
+```CSS
+url("https://img.icons8.com/?size=32&id=fu6HjyEes37m&format=png") 16 16, auto
+```
+
+<Callout type="info">
+  For more information, check [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/cursor).
+</Callout>
+
+<Callout type="info">
+  In order to reset the cursor, leave the input box as blank.
+</Callout>
+
+<br/>

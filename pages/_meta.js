@@ -1,4 +1,5 @@
 export default {
     "index": "Installation",
-    "basic_usage": "Basic Usage"
+    "basic_usage": "Basic Usage",
+
 }

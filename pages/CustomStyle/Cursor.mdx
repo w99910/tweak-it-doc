@@ -1,0 +1,48 @@
+---
+title: "Cursor"
+description: Kuma UI - A new era of CSS-in-JS with Hybrid CSS-in-JS, Theming and Universal UI Components
+---
+
+import { Callout, Tabs, Tab, Steps } from "nextra/components";
+
+# Cursor
+
+Just like `Background Image`, the [css property `cursor`](https://developer.mozilla.org/en-US/docs/Web/CSS/cursor) is used under the hood. You can set the cursor to a [predefined keyword](https://developer.mozilla.org/en-US/docs/Web/CSS/cursor#keyword) or an image.
+
+Example usage will be as follows:
+
+### Setting Cursor to Predefined Keyword
+
+- Copy the code below and paste the keyword to the `cursor` value.
+
+```CSS
+wait
+```
+
+### Setting Cursor to Image
+
+- Find the image you want to set as cursor. ( I recommend you to find icon image. )
+- Right click on the image and select `Copy Image Address`.
+- Copy the code below and paste the image address to the `image_address` value inside `url`.
+
+```CSS
+url("image_address") 16 16, auto;
+```
+
+Example
+
+```CSS
+url("https://img.icons8.com/?size=32&id=uKVJzWYdiV27&format=png") 16 16, auto
+```
+
+<Callout type="info">
+  For more information, check [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/cursor).
+</Callout>
+
+<Callout type="info">
+  In order to reset the cursor, leave the input box as blank.
+</Callout>
+
+<br/>
+
+{/* <video className="rounded-lg" muted controls loop playsinline src="/custom-style/change-background.webm" /> */}

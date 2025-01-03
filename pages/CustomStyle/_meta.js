@@ -1,6 +1,9 @@
 export default {
     "index": "What is a style?",
-    "BackgroundColor": "Background Color",
+    "Background_Color": "Background Color",
+    "Background_Image": "Background Image",
+    "Cursor": "Cursor",
+    "Cursor_Hover": "Cursor Hover",
     "Width": "Width",
     "Font_Color": "Font Color",
     "Font_Family": "Font Family",

@@ -1,0 +1,62 @@
+---
+title: "Background Image"
+---
+
+import { Callout, Tabs, Tab, Steps } from "nextra/components";
+
+# Background Image
+
+Technically,when you set a background image, the extension will create a element under the layer and set [`background`](https://developer.mozilla.org/en-US/docs/Web/CSS/background) property to the element. I was going to prompt only the url of the image but it could be limited such as you can't set multiple images or gradient background. So I decided to use [`background`](https://developer.mozilla.org/en-US/docs/Web/CSS/background) property value instead.
+Example usages will be as follows:
+
+### Setting Single Background Image
+
+- Find the image you want to set as background. ( Don't forget to choose high resolution images for better quality. )
+- Right click on the image and select `Copy Image Address`.
+- Copy the code below and paste the image address to the `image_address` value inside `url`.
+
+```CSS
+url("image_address") no-repeat center center / cover;
+```
+
+Example: 
+```CSS
+url("https://example.com/image.jpg") no-repeat center center / cover;
+```
+
+### Setting Multiple Background Image
+
+- Find the images you want to set as background. ( Don't forget to choose high resolution images for better quality. )
+- Right click on the image and select `Copy Image Address`.
+- Copy the code below and paste the image address to the `image_address` value inside `url`.
+
+```CSS
+url("image_address1"), url("image_address2") no-repeat center center / cover;
+```
+
+Example: 
+```CSS
+url("https://example.com/image1.jpg"), url("https://example.com/image2.jpg") no-repeat center center / cover;
+```
+
+### Setting Grainy Background with Custom Color
+
+I generate the noisy texture with [this tool](https://noice.vercel.app/). Then copy the svg code and encode it [here](https://yoksel.github.io/url-encoder/) for css usage.
+
+```css
+#323232 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' id='noice'%3E%3Cfilter id='noise-filter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.54' numOctaves='4' stitchTiles='stitch'%3E%3C/feTurbulence%3E%3CfeColorMatrix type='saturate' values='0'%3E%3C/feColorMatrix%3E%3CfeComponentTransfer%3E%3CfeFuncR type='linear' slope='0.46'%3E%3C/feFuncR%3E%3CfeFuncG type='linear' slope='0.46'%3E%3C/feFuncG%3E%3CfeFuncB type='linear' slope='0.46'%3E%3C/feFuncB%3E%3CfeFuncA type='linear' slope='0.56'%3E%3C/feFuncA%3E%3C/feComponentTransfer%3E%3CfeComponentTransfer%3E%3CfeFuncR type='linear' slope='1.47' intercept='-0.23'/%3E%3CfeFuncG type='linear' slope='1.47' intercept='-0.23'/%3E%3CfeFuncB type='linear' slope='1.47' intercept='-0.23'/%3E%3C/feComponentTransfer%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise-filter)'%3E%3C/rect%3E%3C/svg%3E%0A")
+```
+
+If you wish to change base color, you can change the color code `#323232` to your desired color.
+
+<Callout type="info">
+  For more information, check [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/background).
+</Callout>
+
+<Callout type="info">
+  In order to reset the background image, leave the input box as blank.
+</Callout>
+
+<br/>
+
+<video className="rounded-lg" muted controls loop playsinline src="/custom-style/change-background-image.webm" />

@@ -53,7 +53,7 @@ export default {
     footer: {
         component: <footer class="bg-green-gradient py-[5vh] items-center w-full flex justify-center">
             <div class="w-full flex flex-col items-center px-4 sm:w-10/12 md:w-9/12 lg:w-8/12 2xl:w-7/12">
-                <img alt="logo" src="/logo.svg" />
+                <img alt="logo" src="/logo.svg" style={{ 'border': 'none' }} />
                 <h2 class="text-text-gray italic mt-4 font-medium px-4 text-lg text-center">Ultimate Web Styler Extension -
                     Your web,
                     your

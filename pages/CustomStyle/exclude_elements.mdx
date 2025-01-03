@@ -1,6 +1,5 @@
 ---
 title: "Exclude Elements"
-description: Kuma UI - A new era of CSS-in-JS with Hybrid CSS-in-JS, Theming and Universal UI Components
 ---
 
 import { Callout, Tabs, Tab, Steps } from "nextra/components";
@@ -26,7 +25,12 @@ When you cannot select element such as hidden popover, you can use this feature.
 
 ### Select Element
 
-This method is easy and straightforward but you need to select the exact element to exclude. If the extension is not excluding the element, you should check if you have selected the correct element by inspecting it ( using the method 1.)
+This method is easy and straightforward but you need to select the exact element to exclude. This method exludes the selected element and [its children](https://developer.mozilla.org/en-US/docs/Web/CSS/Child_combinator) from being applied by the extension. If the extension is not excluding the element, you should check if you have selected the correct element by inspecting it ( using the method 1.)
+
+<Callout type="warning">
+  Please note that this method could trigger performance issue if you select the parent element of many children. Thus, please select the element wisely.
+</Callout>
+
 
 <br/>
 
