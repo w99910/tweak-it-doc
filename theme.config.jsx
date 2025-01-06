@@ -84,7 +84,7 @@ export default {
                         </div>
                     </div>
                 </div>
-                <p class="mt-20">© 2024 Tweak It. All right reserved.</p>
+                <p class="mt-20">© 2025 Tweak It. All right reserved.</p>
             </div>
         </footer>
     }
